@@ -6,6 +6,5 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-
-node_modules/
-package-lock.json
+/packge-lock.json
+/node_modules/
