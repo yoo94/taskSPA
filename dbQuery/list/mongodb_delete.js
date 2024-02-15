@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 // 클라우드 아틀라스 MongoDB URI
-const url = require('../front/common/common')
+const url = require('../../front/common/common')
 
 // MongoDB 클라이언트 생성
 const client = new MongoClient(url.getUrl(), { useNewUrlParser: true, useUnifiedTopology: true });

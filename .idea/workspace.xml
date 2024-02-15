@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="몽고DB 연결">
+    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="몽고DB insert">
+      <change afterPath="$PROJECT_DIR$/dbQuery/mongodb_delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dbQuery/mongodb_update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbQuery/mongodb_insert.js" beforeDir="false" afterPath="$PROJECT_DIR$/dbQuery/mongodb_insert.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbQuery/mongodb_select.js" beforeDir="false" afterPath="$PROJECT_DIR$/dbQuery/mongodb_select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/common/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/common/common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="20.11.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="20.11.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dbQuery" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="모듈" />
     <property name="project.structure.proportion" value="0.0" />
@@ -91,6 +91,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -126,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707990764675</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="몽고DB insert">
+      <created>1707993581595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707993581595</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="라우팅 셋팅" />
     <MESSAGE value="몽고DB 연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="몽고DB 연결" />
+    <MESSAGE value="몽고DB insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="몽고DB insert" />
   </component>
 </project>
