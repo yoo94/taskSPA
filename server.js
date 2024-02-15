@@ -1,6 +1,5 @@
 const express = require("express");
 const path = require("path");
-
 // express 사용
 const app = express();
 
@@ -14,3 +13,20 @@ app.get("/*", (req, res) => {
 
 // port 생성 서버 실행
 app.listen(process.env.PORT || 3000, () => console.log("Server running ...."));
+
+
+const mongoose = require('mongoose')
+mongoose
+    .connect(
+        'mongodb+srv://jaeseok9405:a123123@cluster0.uqjoilc.mongodb.net/',
+        {
+            // useNewUrlPaser: true,
+            // useUnifiedTofology: true,
+            // useCreateIndex: true,
+            // useFindAndModify: false,
+        }
+    )
+    .then(() => console.log('MongoDB conected'))
+    .catch((err) => {
+        console.log(err);
+    });
