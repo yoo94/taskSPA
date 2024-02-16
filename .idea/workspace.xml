@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/front/component/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="몽고DB 연결">
+      <change afterPath="$PROJECT_DIR$/front/component/controller/getLogin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/component/view/completeTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/completeTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbQuery/user/mongodb_select_user.js" beforeDir="false" afterPath="$PROJECT_DIR$/dbQuery/user/mongodb_select_user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/component/view/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/component/view/mypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/mypage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/component/view/taskEdit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/component/view/taskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/taskList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="20.11.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="20.11.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../unipost-mobile/unidocu6-mobile/unidocu6-mobile" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="모듈" />
     <property name="project.structure.proportion" value="0.0" />
@@ -108,19 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="side" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="side" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,6 +117,7 @@
       <workItem from="1707955066211" duration="597000" />
       <workItem from="1707962679038" duration="4325000" />
       <workItem from="1707981394751" duration="1206000" />
+      <workItem from="1708070264734" duration="3428000" />
     </task>
     <task id="LOCAL-00001" summary="라우팅 셋팅">
       <created>1707891938134</created>
@@ -163,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707993581595</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="css">
+      <created>1708063075254</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708063075254</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +187,7 @@
     <MESSAGE value="라우팅 셋팅" />
     <MESSAGE value="몽고DB 연결" />
     <MESSAGE value="몽고DB insert" />
-    <option name="LAST_COMMIT_MESSAGE" value="몽고DB insert" />
+    <MESSAGE value="css" />
+    <option name="LAST_COMMIT_MESSAGE" value="css" />
   </component>
 </project>

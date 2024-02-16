@@ -100,7 +100,8 @@ table.taskList #taskContent,#taskSGTXT {
     text-align: center;
 }
 .latestTaskListDiv {
-    background-color: seashell;
+    background-color: white;
+    text-align: center;
 }
 .latestTaskList {
     margin-top: 3em;

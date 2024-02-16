@@ -1,27 +1,47 @@
 const express = require("express");
 const path = require("path");
-// express 사용
+const bodyParser = require("body-parser");
+const selectUser = require("./dbQuery/user/mongodb_select_user");
+
 const app = express();
 
-// __dirname을 빼도 되지만 포함하는 게 정석.
-app.use("/component", express.static(path.resolve(__dirname, "front", "component")))// '/component'으로 시작되는 경로로 접속 시 front/component 기본 고정 경로가 됨.
-app.get("/*", (req, res) => {// 모든 경로에 대해 index.html 파일 제공
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.use("/component", express.static(path.resolve(__dirname, "front", "component")));
+
+app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "front", "index.html"));
 });
-app.listen(process.env.PORT || 3000, () => console.log("Server running ...."));// port 생성 서버 실행
 
-const url = require('./front/common/common')
-const mongoose = require('mongoose')
-mongoose.connect(
-        url.getUrl(),
-        {
-            // useNewUrlPaser: true,
-            // useUnifiedTofology: true,
-            // useCreateIndex: true,
-            // useFindAndModify: false,
+app.post("/postLogin", async (req, res) => {
+    const { email, password } = req.body;
+
+    try {
+        const user = await selectUser(email, password);
+        if (user) {
+            res.status(200).json({ message: "로그인 성공" });
+        } else {
+            res.status(401).json({ message: "로그인 실패" });
         }
-    )
-    .then(() => console.log('MongoDB conected'))
+    } catch (error) {
+        console.error("로그인 요청 실패:", error);
+        res.status(500).json({ message: "서버 오류" });
+    }
+});
+
+app.listen(process.env.PORT || 3000, () => console.log("Server running ...."));
+
+const url = require("./front/common/common");
+const mongoose = require("mongoose");
+mongoose
+    .connect(url.getUrl(), {
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
+        // useCreateIndex: true,
+        // useFindAndModify: false,
+    })
+    .then(() => console.log("MongoDB connected"))
     .catch((err) => {
         console.log(err);
     });
