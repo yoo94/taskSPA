@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+/*login*/
+.login-wrapper{
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #6A24FE;
+    margin-bottom: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #6A24FE;
+    margin-top: 20px;
+}
+#login-form > input[type="checkbox"]{
+    display: none;
+}
+#login-form > label{
+    color: #999999;
+}
+
+/*tasklist*/
+table.taskList {
+    margin-top: 10em;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+table.taskList thead th {
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+    background: #6A24FE;
+    margin: 20px 10px;
+}
+table.taskList tbody th {
+    width: auto;
+    padding: 10px;
+}
+table.taskList td {
+    width: auto;
+    padding: 10px;
+    vertical-align: top;
+}
+table.taskList .even {
+    background: #fdf3f5;
+}
+table.taskList #taskDate,#taskTime,#taskComplete,#taskDelay {
+    width: 100px;
+}
+table.taskList #taskContent,#taskSGTXT {
+    width: 300px;
+}
+.taskList_content {
+    border: 1px solid #6A24FE; /* 테두리 스타일 지정 */
+}
+
+/*dash board*/
+.dash-board {
+    margin-top: 10em;
+    background-color: #F8F8F8;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.latestTaskListDiv {
+    background-color: seashell;
+}
+.latestTaskList {
+    margin-top: 3em;
+    background-color: #f6f9fc;
+    color: black;
+    font-family: inherit;
+}
+
+.dash-board .row {
+    width: 24%;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid #6A24FE;
+    margin: 2px;
+}
+.dash-board .row .col {
+    width: 100%;
+}
+.dash-board .title {
+    color: #999999;
+    display: block;
+}
+.dash-board .dash-count {
+    font-size: 3em;
+}
+.dash-board h2 {
+    color: #6A24FE;
+}

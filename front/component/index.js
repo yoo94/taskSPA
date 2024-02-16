@@ -1,7 +1,6 @@
 import mypage from "./view/mypage.js";
 import login from "./view/login.js";
 import taskList from "./view/taskList.js";
-import taskEdit from "./view/taskEdit.js";
 import completeTask from "./view/completeTask.js";
 
 // 뷰 렌더링 함수
@@ -13,9 +12,9 @@ const renderView = async (view) => {
 const router = async () => {
     const routes = [
         { path: "/", view: mypage },
+        { path: "/mypage", view: mypage },
         { path: "/login", view: login },
         { path: "/taskList", view: taskList },
-        { path: "/taskEdit", view: taskEdit },
         { path: "/completeTask", view: completeTask }
     ];
 

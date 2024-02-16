@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="몽고DB insert">
-      <change afterPath="$PROJECT_DIR$/dbQuery/mongodb_delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dbQuery/mongodb_update.js" afterDir="false" />
+    <list default="true" id="79c5a691-81ca-440c-b2a7-8bc31d10e035" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/front/component/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbQuery/mongodb_select.js" beforeDir="false" afterPath="$PROJECT_DIR$/dbQuery/mongodb_select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/view/completeTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/completeTask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/view/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/view/mypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/mypage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/view/taskEdit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/component/view/taskList.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/component/view/taskList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="20.11.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="20.11.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dbQuery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="모듈" />
     <property name="project.structure.proportion" value="0.0" />
@@ -61,6 +67,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -91,13 +108,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="side" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="side" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,7 +191,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="라우팅 셋팅" />
