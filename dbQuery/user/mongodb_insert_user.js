@@ -17,11 +17,7 @@ async function main() {
 
         // 데이터 삽입
         const result = await collection.insertMany([
-            { name: 'John1', id: 'a1', password: '1234' },
-            { name: 'John2', id: 'a2', password: '1234' },
-            { name: 'John3', id: 'a3', password: '1234' },
-            { name: 'John4', id: 'a4', password: '1234' },
-            { name: 'John5', id: 'a5', password: '1234' }
+            { email: '1234@1234.com',name: 'John1', id: 'a1', password: '1234' }
         ]);
 
         console.log(`${result.insertedCount} documents inserted`);
