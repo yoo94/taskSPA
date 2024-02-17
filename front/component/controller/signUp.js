@@ -1,6 +1,7 @@
-export default async function getlogin() {
-    const email = document.querySelector('input[name="userEmail"]');
-    const password = document.querySelector('input[name="userPassword"]');
+export default async function signUp() {
+    const email = document.querySelector('input[name="Email"]');
+    const password = document.querySelector('input[name="password"]');
+    const name = document.querySelector('input[name="name"]');
     if (!email.value) {
         alert("이메일 입력해");
         return;
@@ -9,8 +10,12 @@ export default async function getlogin() {
         alert("비밀번호 입력해");
         return;
     }
+    if (!name.value) {
+        alert("이름 입력해");
+        return;
+    }
     try {
-        const response = await fetch("/postLogin", {
+        const response = await fetch("/postSignUp", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -21,13 +26,10 @@ export default async function getlogin() {
                         }),
                     })
         if(response.statusText === 'Unauthorized'){
-            alert('로그인 실패');
+            alert('회원가입 실패');
             return false;
         }
-        if(response.statusText === 'OK') {
-            sessionStorage.setItem("successLogin", "true" ); // 저장
-            location.href="/mypage";
-        }
+        if(response.statusText === 'OK') location.href="/login";
     } catch (error) {
         console.error('로그인 요청 실패:', error);
     }

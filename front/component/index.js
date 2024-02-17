@@ -2,7 +2,9 @@ import mypage from "./view/mypage.js";
 import login from "./view/login.js";
 import taskList from "./view/taskList.js";
 import completeTask from "./view/completeTask.js";
+import sign from "./view/sign.js";
 import getLogin from "./controller/getLogin.js"
+import signUp from "./controller/signUp.js"
 
 // 뷰 렌더링 함수
 const renderView = async (route) => {
@@ -11,6 +13,11 @@ const renderView = async (route) => {
     if(route.path === '/login'){
         document.getElementById('login').addEventListener("click", (e) => {
             getLogin();
+        });
+    }
+    if(route.path === '/sign'){
+        document.getElementById('sign-up').addEventListener("click", (e) => {
+            signUp();
         });
     }
 };
@@ -22,9 +29,10 @@ const router = async () => {
         { path: "/mypage", view: mypage },
         { path: "/login", view: login },
         { path: "/taskList", view: taskList },
-        { path: "/completeTask", view: completeTask }
+        { path: "/completeTask", view: completeTask },
+        { path: "/sign", view: sign },
+        { path: "/logout", view: login }
     ];
-
     const currentPath = window.location.pathname;
     const route = routes.find(route => route.path === currentPath);
 
@@ -39,9 +47,18 @@ const router = async () => {
 // 초기화 및 이벤트 핸들러 등록
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", (e) => {
-        if (e.target.matches("[data-link]")) {
+        if (e.target.matches("[data-link]") || (e.target.id === 'login' || e.target.id === 'sign-up')) {
             e.preventDefault();
-            history.pushState(null, null, e.target.href);
+            let targetHref = e.target.href
+            let nextpage = e.target.id ? e.target.id : e.target.href
+            if(nextpage.includes('login') && sessionStorage.getItem("successLogin") === 'true'){
+                targetHref = '/mypage';
+            }
+            else if(nextpage.includes('/logout') || (nextpage.includes( '/mypage') && sessionStorage.getItem("successLogin")=== 'false')){
+                sessionStorage.setItem("successLogin","false");
+                targetHref = '/login';
+            }
+            history.pushState(null, null, targetHref);
             router();
         }
     });

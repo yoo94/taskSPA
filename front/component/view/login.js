@@ -16,6 +16,7 @@ export default class {
                             </label>
                             <input type="submit" value="Login" id="login">
                         </form>
+                        <span><a href="/sign">회원가입하기</a></span>
                     </div>
                 </body>
             </div>

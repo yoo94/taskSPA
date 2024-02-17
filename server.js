@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const selectUser = require("./dbQuery/user/mongodb_select_user");
+const insertUser = require("./dbQuery/user/mongodb_insert_user");
 
 const app = express();
 
@@ -30,6 +31,21 @@ app.post("/postLogin", async (req, res) => {
     }
 });
 
+app.post("/postSignUp", async (req, res) => {
+    const { email, password, name } = req.body;
+
+    try {
+        const user = await insertUser(email, password , name);
+        if (user) {
+            res.status(200).json({ message: "회원가입 성공" });
+        } else {
+            res.status(401).json({ message: "회원가입 실패" });
+        }
+    } catch (error) {
+        console.error("회원가입 요청 실패:", error);
+        res.status(500).json({ message: "서버 오류" });
+    }
+});
 app.listen(process.env.PORT || 3000, () => console.log("Server running ...."));
 
 const url = require("./front/common/common");
