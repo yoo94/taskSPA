@@ -4,6 +4,7 @@ export default class {
     }
     async getHtml() {
         return `
+        <h1 class="pageTitle">MY Page</h1>
         <div class="dash-board">
             <div class="row">
                 <div class="col">

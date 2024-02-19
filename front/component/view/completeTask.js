@@ -4,7 +4,7 @@ export default class {
     }
     async getHtml() {
         return `
-            <h3>완료 및 삭제, 취소된 TASK 목록</h3>
+            <h1 class="pageTitle">완료 및 삭제, 취소된 TASK 목록</h1>
             <body>
                 <table class="taskList">
                   <thead>

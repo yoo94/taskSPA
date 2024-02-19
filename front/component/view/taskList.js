@@ -4,6 +4,7 @@ export default class {
     }
     async getHtml() {
         return `
+            <h1 class="pageTitle">task List</h1>
             <div>
                 <div class="taskListBtn">
                     <a href="#" class="btn blue mini">추가</a>
