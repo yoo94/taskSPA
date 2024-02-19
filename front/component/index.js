@@ -47,14 +47,14 @@ const router = async () => {
 // 초기화 및 이벤트 핸들러 등록
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", (e) => {
-        if (e.target.matches("[data-link]") || (e.target.id === 'login' || e.target.id === 'sign-up')) {
+        if (e.target.matches("[data-link]")) {
             e.preventDefault();
             let targetHref = e.target.href
             let nextpage = e.target.id ? e.target.id : e.target.href
             if(nextpage.includes('login') && sessionStorage.getItem("successLogin") === 'true'){
                 targetHref = '/mypage';
             }
-            else if(nextpage.includes('/logout') || (nextpage.includes( '/mypage') && sessionStorage.getItem("successLogin")=== 'false')){
+            else if(nextpage.includes('/logout') || sessionStorage.getItem("successLogin")=== 'false'){
                 sessionStorage.setItem("successLogin","false");
                 targetHref = '/login';
             }

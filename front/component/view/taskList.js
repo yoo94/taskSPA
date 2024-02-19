@@ -5,9 +5,14 @@ export default class {
     async getHtml() {
         return `
             <div>
+                <div class="taskListBtn">
+                    <a href="#" class="btn blue mini">추가</a>
+                    <a href="#" class="btn red mini">삭제</a>
+                </div>
                 <table class="taskList">
                   <thead>
                       <tr>
+                        <th id="taskAllCheck"><input type="checkbox" class="check_btn" ><label for="check_btn"></label></th>
                         <th id="taskDate">날짜</th>
                         <th id="taskTime">시간</th>
                         <th id="taskContent">할일</th>
@@ -18,6 +23,7 @@ export default class {
                   </thead>
                   <tbody>
                       <tr class="taskList_content">
+                        <td>체크</td>
                         <td>날짜</td>
                         <td>시간</td>
                         <td>할일</td>
@@ -26,6 +32,7 @@ export default class {
                         <td>미루기</td>
                       </tr>
                       <tr class="taskList_content">
+                        <td>체크</td>
                         <td>날짜</td>
                         <td>시간</td>
                         <td>할일</td>

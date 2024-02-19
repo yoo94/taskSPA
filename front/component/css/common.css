@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     padding: 0;
     margin: 0;
     border: none;
+    font-family: 'JalnanGothic', serif;
 }
+
 body{
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -67,8 +75,11 @@ body{
 }
 
 /*tasklist*/
-table.taskList {
+.taskListBtn {
     margin-top: 10em;
+}
+table.taskList {
+    margin-top: 1em;
     border-collapse: collapse;
     text-align: left;
     line-height: 1.5;
@@ -103,7 +114,8 @@ table.taskList #taskContent,#taskSGTXT {
     width: 300px;
 }
 .taskList_content {
-    border: 1px solid #6A24FE; /* 테두리 스타일 지정 */
+    border-top: 1px solid #6A24FE; /* 테두리 스타일 지정 */
+    border-bottom: 1px solid #6A24FE; /* 테두리 스타일 지정 */
 }
 
 /*dash board*/
@@ -144,4 +156,39 @@ table.taskList #taskContent,#taskSGTXT {
 }
 .dash-board h2 {
     color: #6A24FE;
+}
+
+/*버튼*/
+.btn.mini,
+.btn-two.mini,
+.btn-gradient.mini,
+.btn-effect.mini {
+    padding: 4px 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: black;
+    text-decoration-line: none;
+}
+.btn.blue, .btn-two.blue     {background-color: cornflowerblue;}
+.btn.red, .btn-two.red       {background-color: #fa5a5a;}
+.btn.blue {box-shadow: 0px 4px cornflowerblue;}
+.btn.blue:active {box-shadow: 0 0 cornflowerblue; background-color: cornflowerblue;}
+.btn.red {box-shadow:0px 4px 0px #E04342;}
+.btn.red:active {box-shadow: 0 0 #ff4c4b; background-color: #ff4c4b;}
+
+/*체크박스*/
+
+.check_btn {
+    cursor:pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bcbcbc;
+    accent-color: #ff4c4b;
+}
+
+/* label:before에 체크 된 상태 CSS */
+input .check_btn + label:before{
+    background-repeat: no-repeat;
+    background-position: 50%;
 }

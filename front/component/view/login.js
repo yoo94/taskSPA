@@ -14,7 +14,7 @@ export default class {
                             <label for="remember-check">
                                 <input type="checkbox" id="remember-check">아이디 저장하기
                             </label>
-                            <input type="submit" value="Login" id="login">
+                            <input type="submit" value="Login" id="login" data-link>
                         </form>
                         <span><a href="/sign">회원가입하기</a></span>
                     </div>

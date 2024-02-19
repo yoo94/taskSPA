@@ -12,7 +12,7 @@ export default class {
                             <span>이메일 (ID) </span><input type="text" name="Email" placeholder="Email">
                             <span>비밀번호</span><input type="password" name="password" placeholder="password">
                             <span>이름 </span><input type="text" name="name" placeholder="name">
-                            <input type="submit" value="sign" id="sign-up">
+                            <input type="submit" value="sign" id="sign-up" data-link>
                         </form>
                     </div>
                 </body>
