@@ -7,8 +7,8 @@ export default class {
             <h1 class="pageTitle">task List</h1>
             <div>
                 <div class="taskListBtn">
-                    <a href="#" class="btn blue mini">추가</a>
-                    <a href="#" class="btn red mini">삭제</a>
+                    <a class="btn blue mini" id="addTask">추가</a>
+                    <a class="btn red mini" id="deleteTask">삭제</a>
                 </div>
                 <table class="taskList">
                   <thead>
