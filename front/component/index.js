@@ -43,7 +43,6 @@ const router = async () => {
         console.error("404 - Page not found");
     }
 };
-
 // 초기화 및 이벤트 핸들러 등록
 document.addEventListener("DOMContentLoaded", () => {
     document.body.addEventListener("click", (e) => {
@@ -62,6 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
             router();
         }
     });
+    if(window.location.pathname === '/' && sessionStorage.getItem("successLogin") === 'false'){
+        history.pushState(null, null, '/login');
+    }
     router();
 });
 
